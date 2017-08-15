@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wXX-PQ-Pi9" customClass="ImageCell" customModule="AutoHeight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="313"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="313"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-9e-SkK">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="313"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SdO-9e-SkK" secondAttribute="height" multiplier="16:9" priority="999" id="OcA-GI-N8E"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SdO-9e-SkK" secondAttribute="bottom" id="50S-iv-V9C"/>
+                <constraint firstItem="SdO-9e-SkK" firstAttribute="leading" secondItem="wXX-PQ-Pi9" secondAttribute="leading" id="AzS-aQ-qTd"/>
+                <constraint firstAttribute="trailing" secondItem="SdO-9e-SkK" secondAttribute="trailing" id="W8a-Ly-vJd"/>
+                <constraint firstItem="SdO-9e-SkK" firstAttribute="top" secondItem="wXX-PQ-Pi9" secondAttribute="top" id="hTJ-Zw-Wx5"/>
+            </constraints>
+            <size key="customSize" width="357" height="313"/>
+            <connections>
+                <outlet property="imageView" destination="SdO-9e-SkK" id="m5x-dA-a9X"/>
+            </connections>
+            <point key="canvasLocation" x="505.5" y="41.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
